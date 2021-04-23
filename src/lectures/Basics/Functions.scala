@@ -61,4 +61,26 @@ object Functions extends App {
   }
   println(isPrime(7))
 
+
+  //-----Function that takes a another Function as argument:
+  def transformInt(x: Int, f: Int => Int): Int={
+    f(x)
+  }
+  def fn1(x: Int): Int={x*10}
+
+  println(transformInt(10,fn1))
+  print(transformInt(10,x=> x*10))
+
+  def ConvertToUpperCase(inputStr: String): String={
+    if(inputStr.isEmpty) "String is Empty"
+    else inputStr.toUpperCase
+  }
+  println(ConvertToUpperCase("abcdefgh"))
+
+  def processString(inputStr: String, fn: String=>String):String={
+    fn(inputStr)
+  }
+  println(processString("abcd",ConvertToUpperCase))
+  println(processString("abcd", str => str.toUpperCase) )//Same using lambda
+
 }

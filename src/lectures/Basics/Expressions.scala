@@ -38,6 +38,14 @@ object Expressions extends App {
     42
   }
   println(someOtherVal)
+
+
+  //---Example of code block:
+  println({
+    val x=10
+    x+30
+  })
+
 }
 
 

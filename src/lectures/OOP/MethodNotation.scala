@@ -28,13 +28,13 @@ object MethodNotation extends App {
 
   println(mary(5))
 
-  println(mary IsEmployed)
+  //println(mary IsEmployed)
   val tom= new Person("tom","Titanic")
   println(tom + mary)
 
   println((mary+"the rockstar")())
   println(mary learns "Scala1")
-  println(mary learnScala)
+  //println(mary learnScala)
 
   println(1+2)
   println(1.+(2)) //same

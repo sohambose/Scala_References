@@ -48,6 +48,12 @@ object FunctionBasic extends App{
 
 
 
+
+
+
+
+
+
   val specialFunction2: Int => Int => Int = (x: Int) => (y: Int) => x + y
 
 }
