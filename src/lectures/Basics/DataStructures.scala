@@ -109,6 +109,24 @@ object DataStructures extends App {
   println(getmap999)
 
 
+  //--Exercise:
+  //--create list of number 1-20. Find all numbers that are divisible by 3
+  val lst_20= List(1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+
+  //------Using Loop-----
+  //  for (item <- lst_20){
+  //    if (item % 3 ==0)
+  //      println(item)
+  //  }
+
+  //--Using Filter Function on list
+  val lstDiv3= lst_20.filter(_%3==0)
+  for (item <- lstDiv3){
+      println(item)
+  }
+
+
+
 
 
 
